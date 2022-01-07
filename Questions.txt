@@ -1,0 +1,7 @@
+
+What groups should there be? Ie, Admin, Workboss, Student
+
+How is each group meant to login Ie, Google, preset password, self-set password
+
+What information can each group see?  Like days worked, Expectations met
+
