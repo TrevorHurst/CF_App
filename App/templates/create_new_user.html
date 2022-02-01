@@ -1,0 +1,53 @@
+<h1 class="center">Welcome To The User Creation Panel!</h1>
+<form class="infield">
+    <div>
+        <a>ID:</a>
+        <input name="ID">
+    </div>  
+    <div>
+        <a>Email:</a>
+        <input name="email">
+    </div>  
+    <div>
+        <a>Name:</a>
+        <input name="name">
+    </div>
+    <div>
+        <a>Home:</a>
+        <input name="home">
+    </div>
+    <div>
+        <a>ELP:</a>
+        <select name="ELP">
+            {% for i in elps %}
+            <option value='{{i}}'>{{i}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <a>Password:</a>
+        <input name="password">
+    </div>
+    <input class="center" type="submit">
+</form>
+
+<a href="/"><button>Back</button></a>
+
+<a style = 'position:fixed;width:100%; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+
+
+<style>
+    .center{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infield{
+        display: block;
+        text-align: right;
+        margin-left: auto;
+        margin-right: 50%;
+    }
+    
+</style>

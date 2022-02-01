@@ -1,0 +1,32 @@
+<h1>Welcome to Boys Ranch Admin Console</h1>
+<a href="/create_new_user"><button>Create New User</button></a>
+<a href='google/logout'><button id = "logout">logout</button></a>
+
+
+<!-- Create User thingies -->
+{% for i in lou %}
+<ol style='display: in-line'>
+<label>ID: </label><a>{{i.id}}</a>
+<label>Username: </label><a>{{i.username}}</a>
+<label>Email: </label><a>{{i.email}}</a>
+<label>Home: </label><a>{{i.home}}</a>
+<label>ELP: </label><a>{{i.ELP}}</a>
+
+<br>
+<a href='/report/{{i.username}}/{{i.id}}'><button>Get Report</button></a>
+<a href='/edit/{{i.username}}/{{i.id}}'><button>Edit</button></a>
+</ol>
+<br>
+{% endfor %}
+
+
+
+<a style = 'position:fixed;width:100%; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+<style>
+    .center{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
