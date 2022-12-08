@@ -1,0 +1,27 @@
+<html>
+<h1 style='position:fixed;width:100%;color: white; background-color: black; right:0px; top:-25px;'>Report of {{user}}</h1>
+<br>
+<table border="1">
+    {% for line in commentsList %}
+    <tr>
+    {% for item in line.split(',')%}
+    <td>
+    {{item}}
+    </td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+
+    <a href="/"><button>Back</button></a>
+
+    <a style = 'position:fixed;width:100%; background-color: black; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+
+</html>
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+</style>

@@ -1,0 +1,28 @@
+<html>
+    <form method="post">
+        <table border="1">
+            {% for line in commentsList %}
+            {%set j = loop.index%}
+            <label style="font-size: 30pt;">Entry {{j}} </label><tr>
+            {%set i = loop.index%}
+            {% for item in line.split(',')%}
+            <textarea style="max-width:10em;min-width: 5em;resize: horizontal; overflow: hidden;" name = '{{loop.index+5*(i-1)}}'>{{item}}</textarea>
+            </td>
+            {% endfor %}
+            </tr><br>
+            {% endfor %}
+            </table>
+            </div>
+            <br>
+            <input type="submit">
+    </form>
+    <a href="/"><button>Back</button></a>
+
+    <a style = 'position:fixed;width:100%; background-color: black; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+</html>
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+</style>

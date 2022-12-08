@@ -1,0 +1,58 @@
+<h1 class="center" style='position:fixed;width:100%;color: white; background-color: black; right:0px; top:-25px;'>Welcome To The User Creation Panel!</h1>
+<form class="infield", method="post">
+<br>
+<br>
+<br>
+
+    <div>
+        <a>ID:</a>
+        <input name="ID" style="width:13em">
+    </div>  
+    <div>
+        <a>Email:</a>
+        <input type="email" name="email" style="width:13em">
+    </div>  
+    <div>
+        <a>Name:</a>
+        <input name="name" style="width:13em">
+    </div>
+    <div>
+        <a>ELP:</a>
+        <select name="ELP" style="width:13em">
+            {% for i in elps %}
+            <option value='{{i}}'>{{i}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <a>Password:</a>
+        <input name="password" style="width:13em">
+    </div>
+    <input type="submit">
+</form>
+
+<a href="/" style="position: absolute; left: 45%;"><button>Back</button></a>
+
+<a style = 'position:fixed;width:100%; background-color: black; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+
+
+<style>
+    .center{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infield{
+        display: block;
+        text-align: right;
+        margin-left: auto;
+        margin-right: 50%;
+    }
+
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+    
+</style>

@@ -1,0 +1,44 @@
+<h1 style='position:fixed;width:100%;color: white; background-color: black; right:0px; top:-25px;'>Editing {{user}} <a href="/"><button>Back</button></a></h1>
+<br>
+<br>
+<br>
+<br>
+
+
+<form class="center" style='width:25%' method="post">
+    <div>
+        <a>ID</a><br>
+        <input name='ID', value='{{ID}}'></input>
+    </div>
+    <br>
+    <div>
+        <a>ELP:</a>
+        <select name="ELP">
+            <option value="{{ELP}}" selected disabled hidden>{{ELP}}</option>
+            {% for i in all_elps %}
+            <option value='{{i}}'>{{i}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <br>
+    <div>
+        <a>Username</a><br>
+        <input name='Username' value='{{Username}}'></input>
+    </div>
+    <br>
+    <div>
+        <a>Password</a><br>
+        <input name='Password'></input>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<a style = 'position:fixed;width:100%; background-color: black; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+</style>

@@ -1,0 +1,39 @@
+<h1 style='position:fixed;width:100%;color: white; background-color: black; right:0px; top:-25px;'>Boys Ranch Admin Console <a href="/create_new_user"><button>Create New User</button></a>
+    <a href='/google/logout'><button id = "logout">logout</button></a></h1>
+<br>
+<br>
+<br>
+<br>
+
+
+<a>There are {{number}} log(s) submitted </a><a href="/EmAiL_SuBmIT"><button>Get Email Report</button></a>
+<!-- Create User thingies -->
+{% for i in lou %}
+<ol style='display: table-cell'>
+    <span><label>ID: </label><a>{{i.id}}</a></span>
+    <span><label>Username: </label><a>{{i.username}}</a></span>
+    <span><label>Email: </label><a>{{i.email}}</a></span>
+    <span><label>ELP: </label><a>{{i.ELP}}</a></span>
+    <br>
+    <a href='/report/{{i.username}}/{{i.id}}'><button>Get Report</button></a>
+    <a href='/edit/{{i.username}}/{{i.id}}'><button>Edit</button></a>
+</ol>
+<br>
+{% endfor %}
+
+
+<a style = 'position:fixed;width:100%;color: white; background-color: black; right:0px;bottom:0px; text-align: center'>© Trevor Hurst 2022</a>
+
+
+<style>
+    .center{
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+</style>
