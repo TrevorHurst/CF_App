@@ -7,7 +7,7 @@ import datetime
 import os
 server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
 
-server.login("calfarleyclockin@gmail.com","Donatello_STEAM")
+server.login("calfarleyclockin@gmail.com","CENSORED")
 
 message = MIMEMultipart()
 
